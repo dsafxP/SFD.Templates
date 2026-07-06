@@ -12,9 +12,9 @@ Script collection for Superfighters Deluxe development
 
 While these tools are designed for use with [SFD.Templates](https://github.com/dsafxP/SFD.Templates), they can also be used as standalone components.
 
-# 🛠️ Tools
+## 🛠️ Tools
 
-## LibrarySetup
+### LibrarySetup
 
 Locates the proprietary `SFD.GameScriptInterface.dll` somewhere on the system (checking a few well-known Steam install locations by default), then symlinks it (falling back to a copy if symlinking isn't possible) into the current directory's  `lib` folder.
 
@@ -28,7 +28,7 @@ Usage: SFDScriptSetup.fsx [-f|--file <path-to-dll>] [-o|--output <output-path>] 
   -h, --help    Show this help message and exit
 ```
 
-## ScriptGenerator
+### ScriptGenerator
 
 Welds together the `GameScript` partial-class bodies from a set of `*.cs` source files into a single, non-compilable `*.txt` "script" file, suitable for usage in Superfighters Deluxe.
 
@@ -43,3 +43,9 @@ Usage: SFDScriptGenerator.fsx <file1.cs> [file2.cs ...] [-o|--output <path>] [-h
   -o, --output  Path to write the resulting welded .csx file to (required)
   -h, --help    Show this help message and exit
 ```
+
+## MigrateEvents
+
+Converts event names from the legacy format to the new format.
+
+Example: `Events.PlayerKeyInputCallback.Start` -> `Game.Events.StartPlayerKeyInputCallback`
