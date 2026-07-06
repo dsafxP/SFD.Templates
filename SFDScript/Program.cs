@@ -4,7 +4,7 @@ namespace MySFDScript;
 
 public abstract class GameScriptInterfaceExtended : GameScriptInterface
 {
-    protected IGame Game;
+    protected static readonly IGame Game;
 }
 
 public partial class GameScript : GameScriptInterfaceExtended
