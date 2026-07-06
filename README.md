@@ -43,3 +43,9 @@ Usage: SFDScriptGenerator.fsx <file1.cs> [file2.cs ...] [-o|--output <path>] [-h
   -o, --output  Path to write the resulting welded .csx file to (required)
   -h, --help    Show this help message and exit
 ```
+
+## MigrateEvents
+
+Converts event names from the legacy format to the new format.
+
+Example: `Events.PlayerKeyInputCallback.Start` -> `Game.Events.StartPlayerKeyInputCallback`
