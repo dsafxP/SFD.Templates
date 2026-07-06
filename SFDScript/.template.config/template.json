@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "dsafxP",
+  "identity": "SFD.Templates.SFDScript",
+  "name": "Superfighters Deluxe Script Extension",
+  "shortName": "sfd-script",
+  "sourceName": "MySFDScript",
+  "preferNameDirectory": true,
+  "classifications": [ "Superfighters Deluxe", "XNA", "FNA" ],
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
