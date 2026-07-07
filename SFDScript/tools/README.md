@@ -44,7 +44,7 @@ Usage: SFDScriptGenerator.fsx <file1.cs> [file2.cs ...] [-o|--output <path>] [-h
   -h, --help    Show this help message and exit
 ```
 
-## MigrateEvents
+### MigrateEvents
 
 Converts event names from the legacy format to the new format.
 
